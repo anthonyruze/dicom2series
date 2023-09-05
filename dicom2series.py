@@ -22,7 +22,7 @@ parser.add_argument('-o', '--outfile', required=False, help='output file, in JSO
 parser.add_argument('-anonymise', '--anonymise',required=False,type=int, default= 0)
 args = parser.parse_args()
 
-w = args.anomyse
+w = args.anonymise
 
 if args.infile :
     dir_input = args.infile
@@ -39,9 +39,6 @@ else :
     print ('Renseignez dossier de sortie via -o path')
 
 subprocess.run(['dcm2niix', '-ba', 'n','-o',dir_output, dir_input])
-
-
-w = args.anonimyse
 
 
 file_jsons = glob.glob(dir_output + "/*.json")
