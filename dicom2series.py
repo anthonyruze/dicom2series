@@ -14,7 +14,7 @@ import pandas as pd
 import shutil
 import pathlib
 
-print ('essai')
+
 
 parser = argparse.ArgumentParser(description="first python version")
 parser.add_argument('-i', '--infile',required=False, help='input file, in JSON format')
