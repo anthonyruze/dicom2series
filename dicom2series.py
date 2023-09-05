@@ -19,7 +19,7 @@ import pathlib
 parser = argparse.ArgumentParser(description="first python version")
 parser.add_argument('-i', '--infile',required=False, help='input file, in JSON format')
 parser.add_argument('-o', '--outfile', required=False, help='output file, in JSON format')
-parser.add_argument('-anonimyse', '--anonimyse',required=False,type=int, default= 0)
+parser.add_argument('-anonymise', '--anonymise',required=False,type=int, default= 0)
 args = parser.parse_args()
 
 w = args.anomyse
