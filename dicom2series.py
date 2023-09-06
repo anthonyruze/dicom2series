@@ -48,7 +48,7 @@ for onefile in file_jsons:
          info = json.load(f)
          a = info['SeriesNumber']
          PatientName = info['PatientName']
-         date = info['AcquisitionDateTime']
+         date = info['AcquisitionDateTime'][:10]
          exam_dir = f'{date}_' + PatientName + f'/S{a:2}_' + info['ProcedureStepDescription']
          final_output = dir_output + '/' + exam_dir
          exam_dir_2 = f'{date}_' + 'Sujet01' + f'/S{a:2}_' + info['ProcedureStepDescription']
